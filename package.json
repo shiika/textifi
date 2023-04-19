@@ -1,0 +1,17 @@
+{
+  "name": "textifi",
+  "version": "1.0.0",
+  "description": "Package to convert any number to its english or arabic text representation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "ts",
+    "text",
+    "number"
+  ],
+  "author": "Islam Abdelkarim",
+  "license": "ISC"
+}
