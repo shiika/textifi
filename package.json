@@ -1,6 +1,6 @@
 {
   "name": "textifing",
-  "version": "1.1.0",
+  "version": "2.14.0",
   "description": "Package to convert any number to its english or arabic text representation",
   "main": "index.js",
   "scripts": {

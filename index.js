@@ -1,13 +1,30 @@
 "use strict";
 exports.__esModule = true;
-exports.TextRepresentation = void 0;
-var langs_1 = require("./langs");
+exports.TextRepresentation = exports.langsWords = exports.LANGUAGES = void 0;
+var LANGUAGES;
+(function (LANGUAGES) {
+    LANGUAGES["EN"] = "en";
+    LANGUAGES["AR"] = "ar";
+})(LANGUAGES = exports.LANGUAGES || (exports.LANGUAGES = {}));
+exports.langsWords = {
+    en: {
+        units: ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'],
+        teens: ['eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'],
+        tens: ['', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'],
+        zeroWord: "zero",
+        minusWord: "minus",
+        onlyWord: "only",
+        hundred: "hundred",
+        million: "million",
+        thousand: "thousand"
+    }
+};
 var TextRepresentation = /** @class */ (function () {
     function TextRepresentation(num, lang) {
         if (lang === void 0) { lang = "en"; }
         this.num = num;
         this.lang = lang;
-        this.config = langs_1.langsWords[lang];
+        this.config = exports.langsWords[lang];
     }
     TextRepresentation.prototype.numberToEnglishWords = function (num) {
         if (num === void 0) { num = this.num; }
