@@ -4,7 +4,7 @@
   "description": "Package to convert any number to its english or arabic text representation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:run": "tsc app.ts & node app.js"
   },
   "keywords": [
     "js",
