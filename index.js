@@ -17,15 +17,15 @@ var TextRepresentation = /** @class */ (function () {
             return this.config.minus + " " + this.numberToEnglishWords(Math.abs(num));
         var words = '';
         if (num >= 1000000) {
-            words += this.numberToEnglishWords(Math.floor(num / 1000000)) + ' million ';
+            words += this.numberToEnglishWords(Math.floor(num / 1000000)) + (" " + this.config.million + " ");
             num %= 1000000;
         }
         if (num >= 1000) {
-            words += this.numberToEnglishWords(Math.floor(num / 1000)) + ' thousand ';
+            words += this.numberToEnglishWords(Math.floor(num / 1000)) + (" " + this.config.thousand + " ");
             num %= 1000;
         }
         if (num >= 100) {
-            words += this.numberToEnglishWords(Math.floor(num / 100)) + ' hundred ';
+            words += this.numberToEnglishWords(Math.floor(num / 100)) + (" " + this.config.hundred + " ");
             num %= 100;
         }
         if (num >= 11 && num <= 19) {
@@ -44,6 +44,3 @@ var TextRepresentation = /** @class */ (function () {
     return TextRepresentation;
 }());
 exports.TextRepresentation = TextRepresentation;
-var test = new TextRepresentation(129546, "en");
-var result = test.numberToEnglishWords();
-console.log(result);

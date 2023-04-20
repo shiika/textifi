@@ -13,6 +13,9 @@ exports.langsWords = {
         tens: ['', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'],
         zeroWord: "zero",
         minusWord: "minus",
-        onlyWord: "only"
+        onlyWord: "only",
+        hundred: "hundred",
+        million: "million",
+        thousand: "thousand"
     }
 };

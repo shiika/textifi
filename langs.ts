@@ -12,5 +12,8 @@ export const langsWords: any = {
         zeroWord: "zero",
         minusWord: "minus",
         onlyWord: "only",
+        hundred: "hundred",
+        million: "million",
+        thousand: "thousand",
     },
 }
